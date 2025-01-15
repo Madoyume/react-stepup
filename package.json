@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.14.0",
     "cra-template": "1.2.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
@@ -34,6 +35,7 @@
     ]
   },
   "devDependencies": {
+    "babel-plugin-emotion": "^11.0.0",
     "styled-jsx": "^5.1.6"
   }
 }
