@@ -1,13 +1,13 @@
-import { Route, Routes } from "react-router-dom";
-
+import React from "react";
+import { Routes, Route } from "react-router-dom";
 import Home from "../Home";
 import Page1Wrapper from "../Page1Wrapper";
 import Page1DetailA from "../Page1DetailA";
 import Page1DetailB from "../Page1DetailB";
 import Page2 from "../Page2";
+import UrlParameter from "../UrlParameter";
 import { page1Routes } from "./Page1Routes";
 import { page2Routes } from "./Page2Routes";
-import { UrlParameter } from "../UrlParameter";
 
 export const Router = () => {
   return (
@@ -16,7 +16,6 @@ export const Router = () => {
       {page1Routes.map((route) => (
         <Route key={route.path} exact={route.exact} element={route.children} />
       ))}
-
       <Route path="/page1" element={<Page1Wrapper />}>
         <Route path="detailA" element={<Page1DetailA />} />
         <Route path="detailB" element={<Page1DetailB />} />
